@@ -11,11 +11,10 @@ class Library:
   def display_books(self):
     
         for book in self.books:
-            print(
-                f"Title: {book.title}, Author: {book.author}, "
-                f"ID: {book.id_number}, Category: {book.category}, "
-                f"Price: {book.get_price()} PLN"
-            )
+            print( f"Title: {book.title}, Author: {book.author}, "
+                   f"ID: {book.id_number}, Category: {book.category}, "
+                   f"Price: {book.get_price()} PLN" )
+            
 class Book:
     def __init__(self, title, author, id_number, category, price):
         self.title = title
@@ -26,7 +25,7 @@ class Book:
    
   def get_price(self):
         return self.__price
-library = Library("Centrum Library", "Zlote Tarasy")
+library = Library("Pałac Kultury Library", "Zlote Tarasy")
 book1 = Book("The Tempest", "William Shakespeare", "1", "Classic", 120)
 book2 = Book("The Farm", "Joanne Ramos", "2", "Fiction", 150)
 book3 = Book("Born a Crime", "Trevor Noah", "3", "Biography", 110)
