@@ -9,9 +9,7 @@ class Library:
         print(f"Book '{book.title}' added successfully to the library.")
    
   def display_books(self):
-        if not self.books:
-            print("No books available in the library.")
-            return
+    
         for book in self.books:
             print(
                 f"Title: {book.title}, Author: {book.author}, "
