@@ -35,6 +35,6 @@ book3 = Book("Born a Crime", "Trevor Noah", "3", "Biography", 110)
 library.add_book(book1)
 library.add_book(book2)
 library.add_book(book3)
-library.add_book(book1)
+
 library.display_books()
     
