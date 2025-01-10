@@ -1,3 +1,5 @@
+import camelcase
+
 class Library:
     def __init__(self, name, address):
         self.name = name
@@ -22,9 +24,14 @@ class Book:
         self.id_number = id_number
         self.category = category
         self.__price = price
-   
+        self.camel = camelcase.Camelcase()
+        
   def get_price(self):
-        return self.__price
+      return self.__price
+
+  def get_camel_case_title(self):
+      return self.camel.hump(self.title)
+      
 library = Library("Pałac Kultury Library", "Zlote Tarasy")
 book1 = Book("The Tempest", "William Shakespeare", "1", "Classic", 120)
 book2 = Book("The Farm", "George Orwell", "2", "Fiction", 150)
