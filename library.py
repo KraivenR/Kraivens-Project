@@ -12,3 +12,4 @@ class Library:
             print(f"Title: {book.title}, Author: {book.author}, "
                   f"ID: {book.id_number}, Category: {book.category}, "
                   f"Price: {book.get_price()}pln")
+                  
